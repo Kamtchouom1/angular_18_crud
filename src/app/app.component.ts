@@ -18,7 +18,6 @@ export class AppComponent {
 
   constructor() {
     this.createForm();
-    debugger;
     const oldData = localStorage.getItem("EmpData");
     if(oldData != null) {
       const parseData = JSON.parse(oldData);
@@ -47,7 +46,6 @@ export class AppComponent {
   }
 
   OnSave() {
-    debugger;
     const oldData = localStorage.getItem("EmpData");
     if(oldData != null) {
       const parseData = JSON.parse(oldData);

@@ -96,7 +96,7 @@
               <button class="btn btn-secondary" (click)="OnReset()">Reset</button>
             </div>
             <div class="col-6 text-center">
-              @if(employeeForm.controls['empId'].value == '0') {
+              @if(employeeForm.controls['empId'].value == '') {
                 <button class="btn btn-success" [disabled]="employeeForm.invalid" (click)="OnSave()">Save Employee</button>
               } @else {
                 <button class="btn btn-warning" [disabled]="employeeForm.invalid" (click)="OnUpdate()">Update Employee</button>
